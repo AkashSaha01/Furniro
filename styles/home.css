@@ -142,7 +142,32 @@ body {
   color: rgb(119, 83, 15);
   font-size: 2rem;
 }
-
+.catagory-section {
+  display: flex;
+  justify-content: center;
+}
+.catagory-block {
+  max-width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.category-down {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.category-image-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.category-image img {
+  height: 480px;
+  width: 381px;
+  border: 1px solid rgb(182, 181, 181);
+}
 @media (max-width: 767px) {
   .icon-section {
     display: none;
