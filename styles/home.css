@@ -160,10 +160,51 @@ body {
     width: 0%;
     display: none;
   }
+  .hero-right {
+    width: 100%;
+  }
+  .hero-container {
+    font-family: poppins, sans-serif;
+    padding: 4px 4px;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+  }
+  .hero-below {
+    width: 90%;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-card-cover {
+    background-color: rgb(254, 241, 220);
+    position: absolute;
+    border: 1px solid rgb(218, 217, 217);
+    opacity: 0.8;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .icon-section {
     display: none;
+  }
+  .hero-below-cover {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-top: 40px;
+  }
+  .hero-left {
+    width: 0%;
+    display: none;
+  }
+  .hero-right {
+    width: 75%;
+  }
+  .hero-below {
+    width: 50%;
+  }
+  .hero-container {
+    text-align: center;
   }
 }
 @media (min-width: 1025px) {
