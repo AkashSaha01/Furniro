@@ -152,6 +152,12 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+.category-upper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
 .category-down {
   display: flex;
   justify-content: center;
@@ -164,9 +170,13 @@ body {
   flex-direction: column;
 }
 .category-image img {
-  height: 480px;
-  width: 381px;
+  height: 380px;
+  width: 300px;
   border: 1px solid rgb(182, 181, 181);
+  object-fit: cover;
+}
+.category-name {
+  text-align: center;
 }
 @media (max-width: 767px) {
   .icon-section {
