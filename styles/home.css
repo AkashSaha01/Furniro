@@ -1,0 +1,117 @@
+body{
+    margin: 0px auto;
+    font-family: "poppins",sans-serif;
+}
+.header-Hero-section {
+    margin: 0;
+    width: 100%;
+    height: 85vh; 
+    background-image: url('../images/hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    justify-content: flex-start; 
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+.only-header-navbarouter{
+    margin:0;
+    height:9vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.only-header-navbarinner{
+    width: 80%;
+    /* height:9vh; */
+    margin:0;
+    background-color: white;
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 20px;
+}
+.header-logo{
+    display: flex;
+    justify-content: center;
+    padding:5px 10px;
+    align-items: center;
+}
+#navlogo{
+    height:75px;
+    width:75px;
+}
+.header-menu{
+    display: flex;
+    justify-content: center;
+    padding:5px 20px;
+    align-items: center;
+}
+.header-menu nav {
+    display: flex;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-link {
+    text-decoration: none;
+   color:black;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+.menu-link:hover,
+.menu-link:focus {
+    background-color: #673c01;
+    color: #fff;
+    font-weight: bold;
+  }
+.icon-section{
+    display: flex;
+    justify-content: center;
+    padding:5px 20px;
+    align-items: center;
+    gap:25px;
+  }
+  .mobile-menu{
+    display: flex;
+    padding: 5px 5px;
+    align-items: center;
+  }
+  @media (max-width:767px){
+    .icon-section{
+        display: none;
+    }
+    .header-menu{
+        display: none;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .icon-section{
+        display: none;
+    }
+}
+  @media(min-width:1025px){
+    .mobile-menu{
+        display: none;
+    }
+  }
+  .hero-card{
+    width: 33%;
+    background-color: rgb(254, 241, 220);
+    position: absolute;
+    bottom:175px;
+    right:190px;
+    border:1px solid rgb(218, 217, 217)
+   
+  }
