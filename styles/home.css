@@ -178,6 +178,74 @@ body {
 .category-name {
   text-align: center;
 }
+
+.product-section {
+  font-family: poppins, sans-serif;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+.product-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(210, 209, 209);
+}
+.product-cover {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+.product-headline {
+  padding-top: 10px;
+  text-align: center;
+}
+.product-card-title p {
+  font-size: 0.7rem;
+}
+.product-card-title h3 {
+  font-size: 1.1rem;
+}
+.product-card-image {
+  display: flex;
+  justify-content: center;
+}
+.product-card-image img {
+  height: 27vh;
+  width: 100%;
+}
+.product-card-title {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8rem;
+}
+.product-card-price {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-size: 0.75rem;
+  gap: 5px;
+}
+.price-left p {
+  font-weight: bold;
+}
+.price-right,
+.product-card-title p {
+  color: rgb(112, 112, 112);
+}
+/*============================================Responsive CSS Start========================================================*/
 @media (max-width: 767px) {
   .icon-section {
     display: none;
