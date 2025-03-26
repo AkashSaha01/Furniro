@@ -265,6 +265,79 @@ body {
   top: 10px;
   right: 10px;
 }
+/*===================New apply=======================*/
+/* Ensure parent container has relative positioning */
+.product-card {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+/* Overlay effect covering the image */
+.product-card-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Initially transparent */
+  transition: background 0.3s ease-in-out;
+}
+
+/* On hover, apply dark overlay */
+.product-card:hover .product-card-image::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure image stays positioned properly */
+.product-card-image {
+  position: relative;
+}
+
+/* "Add to Cart" button */
+.add-to-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+
+/* On hover, show the button */
+.product-card:hover .add-to-cart {
+  opacity: 1;
+}
+
+/* Bottom icons (Share, Compare, Like) */
+.product-icons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.product-icons span {
+  color: white;
+  cursor: pointer;
+}
+
+/* Show icons on hover */
+.product-card:hover .product-icons {
+  opacity: 1;
+}
 
 /*============================================Responsive CSS Start========================================================*/
 @media (max-width: 767px) {
