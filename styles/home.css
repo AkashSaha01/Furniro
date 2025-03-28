@@ -200,6 +200,9 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid rgb(210, 209, 209);
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
 }
 .product-cover {
   width: 60%;
@@ -221,9 +224,10 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
+  width: 100%;
 }
 .product-card-image img {
-  height: 27vh;
+  height: 25vh;
   width: 100%;
 }
 .product-card-title {
@@ -268,11 +272,11 @@ body {
 }
 /*===================New apply=======================*/
 /* Ensure parent container has relative positioning */
-.product-card {
+/* .product-card {
   position: relative;
   overflow: hidden;
   transition: 0.3s ease-in-out;
-}
+} */
 
 /* Overlay effect covering the image */
 .product-card-image::before {
@@ -329,7 +333,7 @@ body {
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   opacity: 0;
   font-size: 0.85rem;
   transition: 0.3s ease-in-out;
@@ -413,6 +417,41 @@ body {
     font-size: 0.9rem;
     color: rgb(74, 73, 73);
   }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 5px;
+  }
+  .product-cover {
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .product-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(210, 209, 209);
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  .product-icons {
+    padding: 15px 5px;
+    font-size: 0.7rem;
+    gap: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .add-to-cart {
+    font-size: 0.7rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .icon-section {
@@ -464,6 +503,15 @@ body {
   .category-upper p {
     font-size: 0.9rem;
     color: rgb(74, 73, 73);
+  }
+  .product-cover {
+    width: 80%;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 5px;
   }
 }
 @media (min-width: 1025px) {
