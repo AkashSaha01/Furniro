@@ -486,6 +486,99 @@ body {
   color: white;
   padding: 10px 15px;
 }
+.setup-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+.setup-outer {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  flex-direction: column;
+}
+.setup-upper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 75%;
+}
+#setup_headline {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/*====================onnovabe try=====================*/
+.setup-down {
+  max-width: 100%;
+  overflow: hidden;
+}
+.image-galare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.image-galare img {
+  object-fit: cover;
+}
+.img-laft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.laft1 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+.laft1 img {
+  object-fit: cover;
+}
+.laft2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.laft2 img {
+  object-fit: cover;
+}
+
+.img-medel img {
+  object-fit: cover;
+}
+.img-right {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.right1 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+.right1 img {
+  object-fit: cover;
+}
+
+.right2 {
+  display: flex;
+
+  align-items: start;
+  gap: 10px;
+}
+.right2 img {
+  object-fit: cover;
+}
 /*============================================Responsive CSS Start========================================================*/
 @media (max-width: 767px) {
   .icon-section {
@@ -689,10 +782,12 @@ body {
     gap: 0;
     font-size: 0.75rem;
     padding: 5px 5px;
-
     border-radius: 5px;
     width: 35%;
     height: 25%;
+  }
+  .room-tab {
+    display: none;
   }
 }
 
@@ -756,13 +851,85 @@ body {
     grid-template-rows: repeat(2, auto);
     gap: 5px;
   }
-  .room-mobile {
+  .room-mobile,
+  .room-right {
     display: none;
   }
+  .room-tab {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .room-upper-tab {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+  }
+  .room-upper-tab img {
+    height: 40vh;
+    width: 31%;
+  }
+  #selected-image-room {
+    height: 50vh;
+    width: 37.5%;
+  }
+  .more-optios-tab {
+    padding-top: 10px;
+  }
+  .slider-options-tab-left {
+    position: absolute;
+    background-color: #fff;
+    left: 5px;
+    top: 135px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider-options-tab-right {
+    position: absolute;
+    background-color: #fff;
+    right: 5px;
+    top: 135px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow-sign,
+  .arrow-sign-left {
+    color: #673c01;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .room-details-tab {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    opacity: 0.8;
+    position: absolute;
+    right: 125px;
+    bottom: 50px;
+    gap: 0;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 30%;
+    height: 20%;
+  }
 }
+
 @media (min-width: 1025px) {
   .mobile-menu,
-  .room-mobile {
+  .room-mobile,
+  .room-tab {
     display: none;
   }
 }
