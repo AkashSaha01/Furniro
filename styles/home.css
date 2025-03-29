@@ -592,6 +592,108 @@ body {
     background-color: #673c01;
     color: white;
   }
+  .room-block {
+    flex-direction: column;
+  }
+  .room-left {
+    width: 90%;
+  }
+  .romm-headline {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #explore-button {
+    width: 50%;
+    padding: 10px 12px;
+    border-radius: 5px;
+  }
+  .room-right {
+    display: none;
+  }
+  .room-upper {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+  }
+  .room-upper img {
+    height: 35vh;
+    width: 50%;
+  }
+  .room-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .slider-options-mobile-right {
+    position: absolute;
+    background-color: #fff;
+    right: 12px;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider-options-mobile-left {
+    position: absolute;
+    background-color: #fff;
+    left: 12px;
+
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow-sign,
+  .arrow-sign-left {
+    color: #673c01;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .room-details-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    opacity: 0.8;
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    gap: 0;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    width: 35%;
+    height: 25%;
+    padding: 5px 5px;
+  }
+  .room-details-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    opacity: 0.8;
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    gap: 0;
+    font-size: 0.75rem;
+    padding: 5px 5px;
+
+    border-radius: 5px;
+    width: 35%;
+    height: 25%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -654,9 +756,13 @@ body {
     grid-template-rows: repeat(2, auto);
     gap: 5px;
   }
+  .room-mobile {
+    display: none;
+  }
 }
 @media (min-width: 1025px) {
-  .mobile-menu {
+  .mobile-menu,
+  .room-mobile {
     display: none;
   }
 }
