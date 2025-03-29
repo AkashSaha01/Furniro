@@ -465,6 +465,27 @@ body {
   font-size: 1.75rem;
   font-weight: bold;
 }
+.room-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  opacity: 0.8;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  gap: 0;
+  padding: 0px 15px;
+  line-height: 50%;
+}
+.room-details-slide {
+  position: absolute;
+  bottom: 20px;
+  left: 165px;
+  background-color: #9d6618;
+  color: white;
+  padding: 10px 15px;
+}
 /*============================================Responsive CSS Start========================================================*/
 @media (max-width: 767px) {
   .icon-section {
