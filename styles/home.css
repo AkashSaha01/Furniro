@@ -513,8 +513,9 @@ body {
 .setup-down {
   max-width: 100%;
   overflow: hidden;
+  box-sizing: border-box;
 }
-.image-galare {
+.setup-image-inner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,7 +524,7 @@ body {
 .image-galare img {
   object-fit: cover;
 }
-.img-laft {
+.setup-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -531,28 +532,31 @@ body {
   gap: 10px;
 }
 
-.laft1 {
+.left-upper {
   display: flex;
   justify-content: center;
   align-items: end;
   gap: 10px;
 }
-.laft1 img {
+.left-upper img {
   object-fit: cover;
 }
-.laft2 {
+.leftdown {
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 10px;
 }
-.laft2 img {
+.leftdown img {
   object-fit: cover;
 }
 
-.img-medel img {
+.middle img {
+  max-height: 25vh;
+  width: 100%;
   object-fit: cover;
 }
+
 .img-right {
   display: flex;
   flex-direction: column;
