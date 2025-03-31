@@ -491,13 +491,16 @@ body {
   display: flex;
   justify-content: center;
   background-color: #fff;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
+
 .setup-outer {
   display: flex;
   justify-content: center;
   width: 90%;
   flex-direction: column;
 }
+
 .setup-upper {
   text-align: center;
   display: flex;
@@ -505,84 +508,84 @@ body {
   flex-direction: column;
   line-height: 75%;
 }
+
 #setup_headline {
   font-size: 1.5rem;
   font-weight: bold;
 }
-/*====================onnovabe try=====================*/
+
+/*==================== Fix for Overflow =====================*/
+
 .setup-down {
   max-width: 100%;
   overflow: hidden;
   box-sizing: border-box;
 }
+
 .setup-image-inner {
   display: flex;
+  flex-wrap: wrap; /* Ensures items don’t overflow */
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-.image-galare img {
-  object-fit: cover;
-}
-.setup-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  max-width: 100%;
 }
 
-.left-upper {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  gap: 10px;
-}
-.left-upper img {
+.setup-image-inner img {
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
-}
-.leftdown {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  gap: 10px;
-}
-.leftdown img {
-  object-fit: cover;
+  border-radius: 10px;
 }
 
-.middle img {
-  max-height: 25vh;
-  width: 100%;
-  object-fit: cover;
-}
+/* =================== Fixing Layout Issues =================== */
 
+.setup-left,
+.middle,
 .setup-right {
   display: flex;
   flex-direction: column;
-
   gap: 10px;
+  width: 30%; /* Ensure they stay within container */
 }
 
-.right-up {
+/* Left Section */
+.left-upper,
+.leftdown {
   display: flex;
   justify-content: center;
-  align-items: end;
   gap: 10px;
+  flex-wrap: wrap; /* Ensures images wrap properly */
 }
-.right-up img {
+
+.left-upper img,
+.leftdown img {
+  width: 48%; /* Ensures they don’t stretch beyond */
   object-fit: cover;
 }
 
-.right-down {
+/* Middle Image */
+.middle img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Right Section */
+.setup-right .right-up,
+.setup-right .right-down {
   display: flex;
-
-  align-items: start;
+  justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
+
+.right-up img,
 .right-down img {
+  width: 48%;
   object-fit: cover;
 }
+
 /*============================================Responsive CSS Start========================================================*/
 @media (max-width: 767px) {
   .icon-section {
