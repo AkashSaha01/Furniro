@@ -557,30 +557,30 @@ body {
   object-fit: cover;
 }
 
-.img-right {
+.setup-right {
   display: flex;
   flex-direction: column;
 
   gap: 10px;
 }
 
-.right1 {
+.right-up {
   display: flex;
   justify-content: center;
   align-items: end;
   gap: 10px;
 }
-.right1 img {
+.right-up img {
   object-fit: cover;
 }
 
-.right2 {
+.right-down {
   display: flex;
 
   align-items: start;
   gap: 10px;
 }
-.right2 img {
+.right-down img {
   object-fit: cover;
 }
 /*============================================Responsive CSS Start========================================================*/
