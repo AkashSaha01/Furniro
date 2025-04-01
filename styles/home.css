@@ -535,20 +535,28 @@ body {
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 /* =================== Fixing Layout Issues =================== */
 
-.setup-left,
-.middle,
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 26%; /* Ensure they stay within container */
+}
+.setup-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 38%;
+}
 .setup-right {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 30%; /* Ensure they stay within container */
+  gap: 5px;
+  width: 42%;
 }
-
 /* Left Section */
 .left-upper,
 .leftdown {
@@ -582,7 +590,6 @@ body {
 
 .right-up img,
 .right-down img {
-  width: 48%;
   object-fit: cover;
 }
 
