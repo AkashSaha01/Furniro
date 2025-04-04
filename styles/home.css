@@ -561,7 +561,7 @@ body {
 .left-upper,
 .leftdown {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 10px;
   flex-wrap: wrap; /* Ensures images wrap properly */
 }
@@ -592,7 +592,20 @@ body {
 .right-down img {
   object-fit: cover;
 }
-
+#complex1{
+  width: 15%;
+  height: 55vh;
+  object-fit: cover;
+}
+#complex2{
+  width: 30%;
+  height: 40vh;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+align-items: end;
+}
 /*============================================Responsive CSS Start========================================================*/
 @media (max-width: 767px) {
   .icon-section {
