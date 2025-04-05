@@ -609,10 +609,12 @@ body {
 .footer {
   background-color: #fff;
   color: #333;
+  border-top: 1px solid #ccc;
   padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "poppins", sans-serif;
 }
 
 .footer-container {
@@ -662,24 +664,26 @@ body {
 
 .newsletter-form {
   display: flex;
-  border-bottom: 1px solid #000;
+  gap: 10px;
   padding-bottom: 5px;
 }
 
 .newsletter-form input[type="email"] {
   border: none;
   outline: none;
-  flex: 1;
-  padding: 5px;
-  font-size: 14px;
+  flex: 0.5;
+  padding: 5px 0px;
+  font-size: 10px;
+  border-bottom: 1px solid #000000;
 }
 
 .newsletter-form button {
   background: none;
   border: none;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
+  border-bottom: 1px solid #000000;
 }
 .footer-wraper {
   width: 100%;
@@ -687,13 +691,15 @@ body {
   justify-content: center;
 }
 .footer-bottom {
-  width: 75%;
+  width: 80%;
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+#footer-gray {
+  color: #656876;
+}
 .footer-bottom-inner {
   text-align: center;
   padding: 15px 0;
