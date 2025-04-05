@@ -1,0 +1,67 @@
+.contenr {
+  overflow: hidden;
+}
+.image-galare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.image-galare img {
+  object-fit: cover;
+}
+.img-laft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.laft1 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+.laft1 img {
+  object-fit: cover;
+}
+.laft2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.laft2 img {
+  object-fit: cover;
+}
+
+.img-medel img {
+  object-fit: cover;
+}
+.img-right {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.right1 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+.right1 img {
+  object-fit: cover;
+}
+
+.right2 {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.right2 img {
+  object-fit: cover;
+}
