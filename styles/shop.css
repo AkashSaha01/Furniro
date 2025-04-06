@@ -844,6 +844,41 @@ body {
   font-size: 13px;
   color: #666;
 }
+.batch-section {
+  background-color: #f3e8d2;
+  width: 100%;
+  padding: 17px 5px;
+  display: flex;
+  justify-content: center;
+}
+.batch-section-inner {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+.batch-card {
+  padding: 15px 0px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.icon-left {
+  display: flex;
+  font-size: 3rem;
+  align-items: center;
+}
+.icon-right {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 0.9;
+}
+.batch-bold {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 /*============================================Responsive CSS Start========================================================*/
 @media (max-width: 767px) {
   .icon-section {
