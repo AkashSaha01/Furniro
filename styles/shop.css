@@ -177,6 +177,35 @@ body {
   color: rgb(119, 83, 15);
   font-size: 2rem;
 }
+
+.filter-nabvar {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #f5e5c2;
+  display: flex;
+  justify-content: center;
+}
+.filter-nabvar-inner {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.filter-nabvar-left,
+.filter-nabvar-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  align-items: center;
+  gap: 20px;
+}
+
+.box-nav p {
+  background-color: #fff;
+  color: #656876;
+  padding: 2px 8px;
+}
 .catagory-section {
   display: flex;
   justify-content: center;
