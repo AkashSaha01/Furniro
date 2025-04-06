@@ -7,7 +7,7 @@ body {
   width: 100%;
   height: 50vh;
   background-image: url("../images/shopImageBackground.png");
-  background-size: cover;
+  background-size: fill;
   background-position: center;
   display: flex;
   justify-content: flex-start;
@@ -16,17 +16,38 @@ body {
   position: relative;
   background-repeat: no-repeat;
 }
+.headline-card-shop {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 80px;
+  right: 725px;
+  z-index: 2;
+}
+#shop-bold {
+  font-weight: bold;
+}
+.shop-headline-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0.85;
+}
+#shop-tophealine {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
 .blur-image {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 41vh;
   background-image: url("../images/shopImageBackground.png");
-  background-size: cover;
+  background-size: fill;
   background-repeat: no-repeat;
-
-  filter: blur(5px);
-  opacity: 0.8;
+  filter: blur(2px);
+  opacity: 0.5;
   z-index: 1;
 }
 .hero-below-cover {
