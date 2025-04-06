@@ -179,6 +179,25 @@ body {
 #asgaard-sofa {
   font-weight: bold;
 }
+.sofa-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sofa-hero-inner {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.sofa-left {
+  width: 20%;
+}
+.sofa-middle {
+  width: 35%;
+}
+.sofa-right {
+  width: 45%;
+}
 .box-nav p {
   background-color: #fff;
   color: #656876;
