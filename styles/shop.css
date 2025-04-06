@@ -482,6 +482,20 @@ body {
 .div-grid-down {
   display: flex;
   justify-content: center;
+  gap: 15px;
+}
+.div-grid-down button {
+  padding: 5px 10px;
+  background-color: #f5e5c2;
+  border: 1px solid rgb(106, 58, 3);
+  color: #673c01;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+.div-grid-down button:hover {
+  background-color: #7a4a06;
+  color: #f5e5c2;
+  font-weight: bold;
 }
 #show-more {
   padding: 10px 25px;
