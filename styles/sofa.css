@@ -5,10 +5,7 @@ body {
 .header-Hero-section {
   margin: 0;
   width: 100%;
-  height: 50vh;
-  background-image: url("../images/shopImageBackground.png");
-  background-size: fill;
-  background-position: center;
+
   display: flex;
   justify-content: flex-start;
   text-align: center;
@@ -38,18 +35,6 @@ body {
   font-weight: bold;
 }
 
-.blur-image {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 41vh;
-  background-image: url("../images/shopImageBackground.png");
-  background-size: fill;
-  background-repeat: no-repeat;
-  filter: blur(2px);
-  opacity: 0.5;
-  z-index: 1;
-}
 .hero-below-cover {
   width: 100%;
   display: flex;
@@ -151,11 +136,11 @@ body {
   border: 1px solid rgb(218, 217, 217);
 }
 /* .hero-card > * {
-    padding: 0px 15px;
-  }
-  .hero-card button {
-    padding-bottom: 10px;
-  } */
+      padding: 0px 15px;
+    }
+    .hero-card button {
+      padding-bottom: 10px;
+    } */
 .hero-card-cover {
   background-color: rgb(254, 241, 220);
   position: absolute;
@@ -183,24 +168,17 @@ body {
   padding: 5px 10px;
   background-color: #f5e5c2;
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 .filter-nabvar-inner {
-  width: 80%;
+  width: 40%;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.filter-nabvar-left,
-.filter-nabvar-right {
-  width: 45%;
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  align-items: center;
-  gap: 20px;
+#asgaard-sofa {
+  font-weight: bold;
 }
-
 .box-nav p {
   background-color: #fff;
   color: #656876;
