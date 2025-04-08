@@ -632,7 +632,10 @@ body {
   background-color: #fff;
   overflow-x: hidden; /* Prevents horizontal scrolling */
 }
-
+.add-to-cart a {
+  text-decoration: none;
+  color: #000000;
+}
 .setup-outer {
   display: flex;
   justify-content: center;
