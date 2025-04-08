@@ -900,8 +900,7 @@ body {
     flex-direction: column;
     justify-content: end;
     align-items: end;
-  }
-  .footer {
+  }.footer {
     background-color: #fff;
     color: #333;
     border-top: 1px solid #ccc;
@@ -971,7 +970,7 @@ body {
     border-bottom: 1px solid #000000;
   }
   
-  .newsletter-form button {
+  #spbutton {
     background: none;
     border: none;
     font-weight: bold;
@@ -1164,6 +1163,14 @@ color:#656876
 .submit-button{
     display: flex;
     justify-content: center;
+}
+#spbutton {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #000000;
 }
   /*============================================Responsive CSS Start========================================================*/
   @media (max-width: 767px) {
