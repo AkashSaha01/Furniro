@@ -16,6 +16,17 @@ body {
   position: relative;
   background-repeat: no-repeat;
 }
+#cart-icon-custom {
+  color: black;
+}
+#cart-icon-custom:hover {
+  color: #9d6618;
+}
+#cart-checout:hover {
+  background-color: #9d6618;
+  color: aliceblue;
+  font-weight: bold;
+}
 .headline-card-shop {
   display: flex;
   justify-content: center;

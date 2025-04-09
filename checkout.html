@@ -35,16 +35,16 @@
               <nav>
                 <ul class="menu">
                   <li class="menu-item">
-                    <a href="#" class="menu-link">Home</a>
+                    <a href="./index.html" class="menu-link">Home</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#" class="menu-link">Shop</a>
+                    <a href="./shop.html" class="menu-link">Shop</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#" class="menu-link">About</a>
+                    <a href="./blog.html" class="menu-link">About</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#" class="menu-link">Contact</a>
+                    <a href="./contact.html" class="menu-link">Contact</a>
                   </li>
                 </ul>
               </nav>
@@ -60,7 +60,9 @@
                 <i class="fa-regular fa-heart"></i>
               </div>
               <div class="individual-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a id="cart-icon-custom" href="./cart.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
               </div>
             </div>
             <div class="mobile-menu">
@@ -82,146 +84,153 @@
         <!-- <div class="hero-card">
           
         </div> -->
-
       </div>
     </header>
     <!--cart-sectio start-->
-    
+
     <br /><br />
     <!--Billing Section-->
-<div class="billing-section">
-<div class="billing-section-inner">
-  <div class="billing-section-left">
-    <div class="form-container">
-      <h2>Billing details</h2>
-      <form>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" />
+    <div class="billing-section">
+      <div class="billing-section-inner">
+        <div class="billing-section-left">
+          <div class="form-container">
+            <h2>Billing details</h2>
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" name="first-name" />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company Name (Optional)</label>
+                <input type="text" id="company" name="company" />
+              </div>
+
+              <div class="form-group">
+                <label for="country">Country / Region</label>
+                <select id="country" name="country">
+                  <option>Bangladesh</option>
+                  <option>India</option>
+                  <option>Pakistan</option>
+                  <option>Nepal</option>
+                  <option>Japan</option>
+                  <option>Malyasia</option>
+                  <option>Thailand</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="address">Street address</label>
+                <input type="text" id="address" name="address" />
+              </div>
+
+              <div class="form-group">
+                <label for="city">Town / City</label>
+                <input type="text" id="city" name="city" />
+              </div>
+
+              <div class="form-group">
+                <label for="province">Province</label>
+                <select id="province" name="province">
+                  <option>Western Province</option>
+                  <option>Eastern Province</option>
+                  <option>Northern Province</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="zip">ZIP code</label>
+                <input type="text" id="zip" name="zip" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="info"></label>
+                <textarea
+                  id="info"
+                  name="info"
+                  rows="3"
+                  placeholder="Additional information"
+                ></textarea>
+              </div>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" />
+        </div>
+        <div class="billing-section-right">
+          <div class="checkout-container">
+            <table class="summary-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Asgaard sofa × 1</td>
+                  <td>Rs. 250,000.00</td>
+                </tr>
+                <tr>
+                  <td>Subtotal</td>
+                  <td>Rs. 250,000.00</td>
+                </tr>
+                <tr class="total">
+                  <td>Total</td>
+                  <td>Rs. 250,000.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <div class="payment-method">
+              <label>
+                <input type="radio" name="payment" checked />
+                <span class="bold-label">Direct Bank Transfer</span>
+              </label>
+              <p class="payment-note">
+                Make your payment directly into our bank account. Please use
+                your Order ID as the payment reference. Your order will not be
+                shipped until the funds have cleared in our account.
+              </p>
+
+              <label>
+                <input type="radio" name="payment" />
+                Direct Bank Transfer </label
+              ><br />
+
+              <label>
+                <input type="radio" name="payment" />
+                Cash On Delivery
+              </label>
+            </div>
+
+            <p class="privacy-policy">
+              Your personal data will be used to support your experience
+              throughout this website, to manage access to your account, and for
+              other purposes described in our
+              <span class="privacy-link">privacy policy</span>.
+            </p>
+            <div class="placeorderbutton">
+              <button>Place Order</button>
+            </div>
           </div>
         </div>
-  
-        <div class="form-group">
-          <label for="company">Company Name (Optional)</label>
-          <input type="text" id="company" name="company" />
-        </div>
-  
-        <div class="form-group">
-          <label for="country">Country / Region</label>
-          <select id="country" name="country">
-            <option>Bangladesh</option>
-            <option>India</option>
-            <option>Pakistan</option>
-            <option>Nepal</option>
-            <option>Japan</option>
-            <option>Malyasia</option>
-            <option>Thailand</option>
-          </select>
-        </div>
-  
-        <div class="form-group">
-          <label for="address">Street address</label>
-          <input type="text" id="address" name="address" />
-        </div>
-  
-        <div class="form-group">
-          <label for="city">Town / City</label>
-          <input type="text" id="city" name="city" />
-        </div>
-  
-        <div class="form-group">
-          <label for="province">Province</label>
-          <select id="province" name="province">
-            <option>Western Province</option>
-            <option>Eastern Province</option>
-            <option>Northern Province</option>
-          </select>
-        </div>
-  
-        <div class="form-group">
-          <label for="zip">ZIP code</label>
-          <input type="text" id="zip" name="zip" />
-        </div>
-  
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" />
-        </div>
-  
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" id="email" name="email" />
-        </div>
-  
-        <div class="form-group">
-          <label for="info"></label>
-          <textarea id="info" name="info" rows="3" placeholder="Additional information"></textarea>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div class="billing-section-right">
-    <div class="checkout-container">
-      <table class="summary-table">
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Subtotal</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Asgaard sofa × 1</td>
-            <td>Rs. 250,000.00</td>
-          </tr>
-          <tr>
-            <td>Subtotal</td>
-            <td>Rs. 250,000.00</td>
-          </tr>
-          <tr class="total">
-            <td>Total</td>
-            <td>Rs. 250,000.00</td>
-          </tr>
-        </tbody>
-      </table>
-  <hr/>
-      <div class="payment-method">
-        <label>
-          <input type="radio" name="payment" checked>
-          <span class="bold-label">Direct Bank Transfer</span>
-        </label>
-        <p class="payment-note">
-          Make your payment directly into our bank account. Please use your Order ID as the payment reference.
-          Your order will not be shipped until the funds have cleared in our account.
-        </p>
-  
-        <label>
-          <input type="radio" name="payment">
-          Direct Bank Transfer
-        </label><br>
-  
-        <label>
-          <input type="radio" name="payment">
-          Cash On Delivery
-        </label>
-      </div>
-  
-      <p class="privacy-policy">
-        Your personal data will be used to support your experience throughout this website, to manage access to your account,
-        and for other purposes described in our <span class="privacy-link">privacy policy</span>.
-      </p>
-      <div class="placeorderbutton">
-        <button>Place Order</button>
       </div>
     </div>
-  </div>
-</div>
-</div>
     <!--Batch Section Start-->
     <div class="batch-section">
       <div class="batch-section-inner">

@@ -449,7 +449,12 @@ body {
   z-index: 2;
   font-size: 0.85rem;
 }
-
+#cart-icon-custom {
+  color: black;
+}
+#cart-icon-custom:hover {
+  color: #9d6618;
+}
 /* On hover, show the button */
 .product-card:hover .add-to-cart {
   opacity: 1;

@@ -191,6 +191,12 @@ body {
     justify-content: center;
     gap: 10px;
   }
+  #cart-icon-custom {
+    color: black;
+  }
+  #cart-icon-custom:hover{
+color: #9d6618;
+  }
   .filter-nabvar-left,
   .filter-nabvar-right {
     width: 45%;
@@ -1146,6 +1152,7 @@ body {
     display: flex;
     justify-content: center;
   }
+
   .footer-bottom {
     width: 80%;
     border-top: 1px solid #ccc;

@@ -292,6 +292,9 @@ max-width: 100%;
   border-collapse: collapse;
   margin-bottom: 25px;
 }
+#cart-icon-custom {
+  color: black;
+}
 
 .summary-table th,
 .summary-table td {

@@ -1172,6 +1172,13 @@ color:#656876
   cursor: pointer;
   border-bottom: 1px solid #000000;
 }
+#cart-icon-custom {
+  color: black;
+}
+#cart-icon-custom:hover{
+  color: #9d6618;
+    }
+
   /*============================================Responsive CSS Start========================================================*/
   @media (max-width: 767px) {
     .icon-section {

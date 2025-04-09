@@ -775,7 +775,12 @@ body {
 #cart-icon-custom {
   color: black;
 }
-
+#cart-icon-custom {
+  color: black;
+}
+#cart-icon-custom:hover {
+  color: #9d6618;
+}
 /*============================================Responsive CSS Start========================================================*/
 @media (max-width: 767px) {
   .icon-section {
